@@ -1,0 +1,81 @@
+.contIncome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../../Images/backgroundIncome.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Cubrir todo el div */
+}
+
+.income{
+    width: 700px;
+    display: flex;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .5); /* Imagen con 50% de opacidad */
+    box-shadow: 0 0 8px #cbcbcb;
+}
+
+.contFormsIncome{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.form > label > input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid blue;
+    transition: 1s;
+}
+
+.form > label > input:focus{
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.description{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .2);
+    background-size: 100% 100%; /* Cubrir todo el div */
+    background-position: center center; /* Posición centrada */
+    text-align: center;
+    color: aliceblue;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.description > img {
+    width: 100px;
+    margin: 10px;
+    animation: onda 2s ease-in-out infinite;
+    transition: .5s;
+}
+
+@keyframes onda {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
